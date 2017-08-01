@@ -1,0 +1,14 @@
+# Template file for 'monero'
+pkgname=monero
+version=0.10.3.1
+revision=1
+build_style=cmake
+hostmakedepends="pkg-config"
+configure_args="-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_GUI_DEPS=ON"
+makedepends="libressl-devel boost-devel libldns-devel libunwind-devel"
+short_desc="Secure, private, untraceable Cryptocurrency based on CryptoNote"
+maintainer="Kieran Coldron <kieran@coldron.com>"
+license="Cryptonote"
+homepage="https://getmonero.org"
+distfiles="https://github.com/${pkgname}-project/${pkgname}/archive/v${version}.tar.gz"
+checksum=9bf321dd501a43a34fb647e535e1b1c583a9aa6a639ccab6305dea3253d6b2f2
